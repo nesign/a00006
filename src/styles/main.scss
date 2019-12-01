@@ -1,0 +1,79 @@
+/* Custom styles  goes here */
+
+@import url(https://fonts.googleapis.com/css?family=Calistoga|Soloway|Chilanka|Comfortaa);
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+
+body {
+  /* fallback if .bgphoto is empty */
+  background-color: #111;
+}
+
+img {
+  max-width: 100%;
+}
+
+section {
+  border-bottom: 10vh;
+}
+
+@media (max-width: 575.98px) {
+
+  //Manage Display Headers for Mobile Devices
+  .display-1 {
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 1.0;
+  }
+
+  .display-2 {
+    font-size: 2.75rem;
+    font-weight: 300;
+    line-height: 1.0;
+  }
+
+  .display-3 {
+    font-size: 2.25rem;
+    font-weight: 300;
+    line-height: 1.0;
+  }
+
+  .display-4 {
+    font-size: 1.75rem;
+    font-weight: 300;
+    line-height: 1.0;
+  }
+}
+
+.fade-in {
+  animation: fadein 1 ease-in 1s;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0.3;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.f-comforta {
+  font-family: Comforta, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.f-calistoga {
+  font-family: Calistoga, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.f-chilanka {
+  font-family: Chilanka, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.f-soloway {
+  font-family: Soloway, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 4px #aaa;
+}
