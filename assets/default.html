@@ -1,0 +1,36 @@
+<head></head><div class="container-fluid">
+  {{#if guest}}
+  <div class="row justify-content-center">
+    <span class="mt-2 text-shadow">{{guest.name}},</span>
+  </div>
+  {{/if}}
+  <section class="mt-2">
+    <div class="row justify-content-center">
+      <div class="display-1 f-satisfy">
+        {{invite.title}}
+      </div>
+    </div>
+  </section>
+  <section class="mt-3">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-8 d-flex justify-content-end">
+        {{#if mainPhoto}}
+        {{#if isVideoInvite}}
+        <iframe class="embed-responsive-item" width="560" height="315" src="{{mainPhoto.url}}"
+          allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        {{else}}
+        <img class="img-fluid" src="{{mainPhoto.url}}" alt="{{mainPhoto.title}}">
+        {{/if}}
+        {{/if}}
+      </div>
+      <div class="col-12 col-md-4 mt-5 mt-md-0">
+        <div class="text-black font-weight-bold">{{invite.shortMsg}}</div>
+        {{#if longMsg}}
+        <div class="mt-5 mb-2 f-chilanka">{{{longMsg}}}</div>
+        {{/if}}
+        <div class="mt-5 mb-2 f-soloway">{{invite.addrText}}</div>
+        <div class="f-soloway">{{invite.timeFromString}} - {{endsat invite}}</div>
+      </div>
+    </div>
+  </section>
+</div>
