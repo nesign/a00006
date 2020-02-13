@@ -1,12 +1,12 @@
-<head></head><div class="container-fluid">
+<head></head><div class="container-fluid" id="inviteDesign">
   {{#if guest}}
   <div class="row justify-content-center">
-    <span class="mt-2 text-shadow">{{guest.name}},</span>
+    <span class="mt-2 text-shadow" id="guestName">{{guest.name}},</span>
   </div>
   {{/if}}
   <section class="mt-2">
     <div class="row justify-content-center">
-      <div class="display-1 f-satisfy">
+      <div class="display-1 f-satisfy" id="title">
         {{invite.title}}
       </div>
     </div>
@@ -19,17 +19,17 @@
         <iframe class="embed-responsive-item" width="560" height="315" src="{{mainPhoto.url}}"
           allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         {{else}}
-        <img class="img-fluid" src="{{mainPhoto.url}}" alt="{{mainPhoto.title}}">
+        <img class="img-fluid" src="{{mainPhoto.url}}" alt="{{mainPhoto.title}}" id="mainPhoto">
         {{/if}}
         {{/if}}
       </div>
       <div class="col-12 col-md-4 mt-5 mt-md-0">
-        <div class="text-black font-weight-bold">{{invite.shortMsg}}</div>
+        <div class="text-black font-weight-bold" id="shortMsg">{{invite.shortMsg}}</div>
         {{#if longMsg}}
-        <div class="mt-5 mb-2 f-chilanka">{{{longMsg}}}</div>
+        <div class="mt-5 mb-2 f-chilanka" id="longMsg">{{{longMsg}}}</div>
         {{/if}}
-        <div class="mt-5 mb-2 f-soloway">{{invite.addrText}}</div>
-        <div class="f-soloway">{{invite.timeFromString}} - {{endsat invite}}</div>
+        <div class="mt-5 mb-2 f-soloway" id="addrText">{{invite.addrText}}</div>
+        <div class="f-soloway" id="time">{{invite.timeFromString}} - {{endsat invite}}</div>
       </div>
     </div>
   </section>
